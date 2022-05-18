@@ -37,10 +37,11 @@ public class MainApp {
       user4.setCar(car4);
       userService.add(user4);
 
-      userService.add(user1);
-      userService.add(user2);
-      userService.add(user3);
-      userService.add(user4);
+
+//      userService.add(user1);
+//      userService.add(user2);
+//      userService.add(user3);
+//      userService.add(user4);
 
       System.out.println(userService.getUserByCar(car1.getModel(), car1.getSeries()));
 
@@ -50,10 +51,8 @@ public class MainApp {
          System.out.println("First Name = "+user.getFirstName());
          System.out.println("Last Name = "+user.getLastName());
          System.out.println("Email = "+user.getEmail());
-         System.out.println("Car = "+user.getCar());
          System.out.println();
       }
-
       context.close();
    }
 }
